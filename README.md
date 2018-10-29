@@ -75,3 +75,15 @@ mhy [ui-panel|tool] [argument1] [argument2] [...]
 - storybook
 - Boot
 - And more I don't remember now...
+
+## Want to help develop `mhy`? Here are the steps:
+1. Uninstall `@mhy/mhy` (and any other `@mhy/*` package) from your machine using `npm un -h @mhy/mhy`;
+1. Fork and clone `@mhy/mhy` repo;
+1. On cloned directory, run `npm i`;
+1. Make it globally available using `npm link`;
+1. Fork and clone any other `@mhy` repo that you wish to contribute (e.g: `@mhy/config`)
+1. On cloned directory, run `npm i && npm run install-dev`;
+1. Make it globally available using `npm link`;
+1. Go back to `@mhy/mhy` directory and run `npm link @mhy/config`;
+1. Run the change watcher using `npm run prepare:watch`;
+1. Done!
